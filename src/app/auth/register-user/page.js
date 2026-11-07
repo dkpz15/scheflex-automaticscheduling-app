@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect } from "react";
 import "@/styles/style.css";
 import { InitLandingPage } from "@/utils/main";
@@ -59,10 +60,12 @@ export default function RegisterUser() {
       <div className="container-fluid h-custom">
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-5 col-xxl-6 mb-4 mb-md-0 div-image-auth">
-            <img
+            <Image
               src="/assets/img/illustration/illustration-3.webp"
               className="img-fluid"
               alt="Illustration"
+              width={600}
+              height={400}
             />
           </div>
 

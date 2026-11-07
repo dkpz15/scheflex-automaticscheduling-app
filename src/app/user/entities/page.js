@@ -12,7 +12,7 @@ import { useDocumentMeta } from "@/hooks/useDocumentMeta";
 export default function ManageEntitiesSelectSchedulePage() {
   useDocumentMeta(
     "Scheflex - Manage Entities",
-    "/assets/img/logo/logo-ico.ico"
+    "/assets/img/logo/logo-ico.ico",
   );
 
   const [sidebarOpen, setSidebarOpen] = useState(true);

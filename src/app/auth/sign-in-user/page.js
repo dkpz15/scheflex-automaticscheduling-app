@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
+import Image from "next/image";
 import Swal from "sweetalert2";
 import "@/styles/style.css";
 import { InitLandingPage } from "@/utils/main";
@@ -44,11 +45,12 @@ export default function SignInUser() {
       <div className="container-fluid h-custom">
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-5 col-xxl-6 mb-4 mb-md-0 div-image-auth">
-            <img
+            <Image
               src="/assets/img/illustration/illustration-2.webp"
               className="img-fluid"
               alt="Illustration"
-              style={{ width: "600px" }}
+              width={600}
+              height={400}
             />
           </div>
           <div
